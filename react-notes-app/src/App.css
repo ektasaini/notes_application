@@ -1,0 +1,300 @@
+
+body {
+   background: #D2E4EB;
+   margin-bottom: 3em;
+}
+.App {
+  text-align: center;
+}
+.logo{
+  height:65px;
+  margin-top: 0px;
+}
+
+.nav-container {
+  height: 100px;
+  background-color: #3498db;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  padding: 10px 40px;
+  font-family: 'Assistant', sans-serif;
+  letter-spacing: 0.6px;
+}
+.nav-logo {
+  color: white;
+  font-size: 3em;
+  float: left;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 5px;
+}
+.nav-button {
+  font-family: 'Assistant', sans-serif;
+  height: 45px;
+  width: 130px;
+  background: rgb(255,255,255);
+  color: #3498db;
+  float: right;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-right: 10px;
+  margin-top: 20px;
+  padding-top: 4px;
+  text-align: center;
+  transition: box-shadow 0.2s cubic-bezier(.25,.8,.25,1);
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.nav-button:hover {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.09), 0 6px 6px rgba(0,0,0,0.13);
+  background-color: #A9D9F1;
+}
+
+
+.search-container{
+  background-color: #A4D8ED;
+  height:45px;
+  width:300px;
+   padding-top: 15px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  text-align: left;
+  font-size: 1.5em;
+ margin-left: 10px;
+  margin-top: 10px;
+
+}
+ 
+
+.note-card-container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  height: 250px;
+  width: 250px;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  padding-top: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin: 40px;
+  text-align: left;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  font-family: 'Assistant', sans-serif;
+  border-radius: 4px;
+}
+
+
+
+.note-card-title {
+  width: 270px;
+  color: white;
+  font-size: 1.35em;
+  font-weight: bold;
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  
+  overflow-y: hidden;
+}
+
+
+.note-card-content {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  padding-top: 30px;
+  width: 200px;
+  height: 200px;
+  font-size: 1.5em;
+  white-space: pre-wrap;
+  overflow: hidden;
+
+
+}
+
+.note-card-delete {
+  float: right;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  color: #2980b9;
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  font-size: 2em;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+
+.note-card-delete:hover {
+
+  color: #e74c3c;
+  transform: rotate(180deg);
+}
+
+
+
+
+
+.icon{
+ 
+  height:30px ;
+  width: 40px;
+}
+
+.note-container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  border-radius: 2px;
+  -webkit-transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  
+  position: relative;
+  font-family: 'Assistant', sans-serif;
+  width: 100%;
+  height: auto;
+}
+
+.note-form {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  margin-top: 65px;
+
+}
+
+.note-title {
+  background-color: #3498db;
+  padding: 10px;
+}
+
+.note-title-input {
+  border: none;
+  font-size: 1.5em;
+  text-align: center;
+  font-family: 'Assistant', sans-serif;
+  width: 600px;
+  background-color: #2980b9;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.note-title-input::placeholder {
+  color: rgb(217, 217, 217);
+}
+
+.note-title-input:focus {
+  outline: none;
+}
+
+.note-textarea-container {
+  background: #fff;
+  margin: 40px;
+  margin-bottom: 10px;
+  margin-top: 0;
+  padding: 40px;
+}
+
+.note-textarea {
+  background: #ecf0f1;
+  width: 500px;
+  height: 150px;
+  padding: 30px;
+  border: none;
+  resize: none;
+  border-radius: none;
+  font-family: 'Assistant', sans-serif;
+  font-size: 1.2em;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.note-textarea:focus {
+  outline: none;
+}
+
+.note-button {
+  font-family: 'Assistant', sans-serif;
+  font-weight: bold;
+  height: 40px;
+  width: 100px;
+  background: #2980b9;
+  color: white;
+  float: right;
+  font-size: 1.5em;
+  border-radius: 2px;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  margin-top: 10px;
+  border: none;
+}
+.color-picker {
+  width: 50%;
+  margin-bottom: -35px;
+}
+.color-picker input {
+  visibility: hidden;
+  width: 0;
+  margin: 0;
+}
+.color-picker label {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-right: 5px;
+  position: relative;
+  cursor: pointer;
+}
+.color-picker input[type="radio"]:checked+label:after { 
+  content: "";
+  position: absolute;
+  transform: rotate(45deg);
+  left: 10px;
+  top: 6px;
+  opacity: .5;
+  width: 5px;
+  height: 10px;
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+} 
+
+
+
+
